@@ -1,4 +1,11 @@
-from Main import Main
+try : 
+    from Main import Main
+except ModuleNotFoundError:
+    import os
+    print('installing requirements.txt')
+    os.system('pip install -r requirements.txt || pip3 install -r requirements.txt') #install module yang diperlukan
+    from Main import Main
+    
 import os
 from time import sleep
 import sys
@@ -8,8 +15,6 @@ def mulai():
     #printout
     print('Program Hitung Honor Karyawan Kontrak\nPT. STAY COOL')
     input('Press Enter to start')
-    print('installing requirements.txt')
-    os.system('pip install -r requirements.txt || pip3 install -r requirements.txt') #install module yang diperlukan
     os.system('cls||clear') #clear terminal
     #printout pake animasi
     kata1 = "-------------------Program Hitung Honor Karyawan Kontrak-------------------\n"
@@ -26,11 +31,16 @@ def mulai():
     Main()
 
 #variasi
+tostart = ('start', 'mulai', 'run', '-r', '-m', '-s')
+toanggota = ('anggota', 'credit', '-a', '-c')
+toclass = ('Main')
+tohelp = ('h', 'help', '-h')
+
 if len(sys.argv) > 1:
 
-    if sys.argv[1] == 'Main':
+    if sys.argv[1] in toclass:
         Main()
-    elif sys.argv[1] == 'start' or sys.argv[1] == 'mulai' or sys.argv[1] == 'run':
+    elif sys.argv[1] in tostart:
         try:
             mulai()
         except KeyboardInterrupt:
@@ -40,7 +50,7 @@ if len(sys.argv) > 1:
             print('Completed but ada yang salah')
         except ValueError :
             print('Harus pake Integer')
-    elif sys.argv[1] == 'credit' :
+    elif sys.argv[1] in toanggota :
         print('\n')
         print('Muhamad Dafa Prasetya')
         print('Devi Alvandi')
@@ -48,11 +58,32 @@ if len(sys.argv) > 1:
         print('Chairil Fajri')
         print('Arie Sutiawan')
         print('\n')
+    elif sys.argv[1] in tohelp :
+        print('--------------Program Hitung Honor Karyawan Kontrak--------------')
+        print('--------------------------PT. Stay Cool--------------------------\n')
+        print("Usage :")
+        print("python start.py [command]\n")
+        print("Command :")
+        for s in range(len(tostart)):
+            print(tostart[s], end =', ')
+        print(' | Memulai program')
+        for a in range(len(toanggota)):
+            print(toanggota[a], end =', ')
+        print(' | Melihat anggota kelompok')
 
     else:
         for i in range(len(sys.argv[1:])):
             print(sys.argv[i+1],end=' ')
         print('\n')
 
-
+else :
+    print("Usage :")
+    print("python start.py [command]\n")
+    print("Command :")
+    for s in range(len(tostart)):
+        print(tostart[s], end =', ')
+    print(' | Memulai program')
+    for a in range(len(toanggota)):
+        print(toanggota[a], end =', ')
+    print(' | Melihat anggota kelompok')
 
