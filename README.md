@@ -1,2 +1,0 @@
-# HonorKaryawanPython
-Tugas Dashprog
