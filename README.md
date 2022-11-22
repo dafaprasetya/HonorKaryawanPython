@@ -1,6 +1,5 @@
 <div style="text-align: center;">
-
-        <h1>Tugas Dasprog kelompok 9</h1>
+    <h1>Tugas Dasprog kelompok 9</h1>
 </div> <br>
 <br>
 <h2>Membuat program hitung honor karyawan PT.STAY COOL</h2>
