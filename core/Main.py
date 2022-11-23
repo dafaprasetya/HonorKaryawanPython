@@ -123,7 +123,7 @@ class Main:
         if saveornot == 'Y' or saveornot == 'y' :
             namafolder = input('Nama Folder : ')
             Hasil(namafolder,argv, staycool)   
-            print('Data disimpan di folder Hasil/{}'.format(namafolder))
+            print('Data disimpan di folder Documents/Hkk_output/{}'.format(namafolder))
             print('Terima kasih sudah menggunakan program kami!')
         else :
             print('Terima kasih sudah menggunakan program kami!')
