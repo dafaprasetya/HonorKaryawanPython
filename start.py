@@ -10,6 +10,20 @@ import os
 from time import sleep
 import sys
 
+def help():
+    print("Usage :")
+    print("python start.py [command]\n")
+    print("Command :")
+    for s in range(len(tostart)):
+        print(tostart[s], end =', ')
+    print(' | Memulai program')
+    for a in range(len(toanggota)):
+        print(toanggota[a], end =', ')
+    print(' | Melihat anggota kelompok')
+    for l in range(len(tolangsung)):
+        print(tolangsung[l], end =', ')
+    print('[jumlah karyawan] | Menjalankan program')
+
 
 def mulai():
     #printout
@@ -69,15 +83,7 @@ if len(sys.argv) > 1:
     elif sys.argv[1] in tohelp :
         print('--------------Program Hitung Honor Karyawan Kontrak--------------')
         print('--------------------------PT. Stay Cool--------------------------\n')
-        print("Usage :")
-        print("python start.py [command]\n")
-        print("Command :")
-        for s in range(len(tostart)):
-            print(tostart[s], end =', ')
-        print(' | Memulai program')
-        for a in range(len(toanggota)):
-            print(toanggota[a], end =', ')
-        print(' | Melihat anggota kelompok')
+        help()
 
     else:
         for i in range(len(sys.argv[1:])):
@@ -85,16 +91,5 @@ if len(sys.argv) > 1:
         print('\n')
 
 else :
-    print("Usage :")
-    print("python start.py [command]\n")
-    print("Command :")
-    for s in range(len(tostart)):
-        print(tostart[s], end =', ')
-    print(' | Memulai program')
-    for a in range(len(toanggota)):
-        print(toanggota[a], end =', ')
-    print(' | Melihat anggota kelompok')
-    for l in range(len(tolangsung)):
-        print(tolangsung[l], end =', ')
-    print('[jumlah karyawan] | Menjalankan program')
+    help()
 

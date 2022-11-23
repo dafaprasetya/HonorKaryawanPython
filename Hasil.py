@@ -1,10 +1,12 @@
 import os
+import pandas
 
 class Hasil:
 
 
     def __init__(self, namafolder, jumlah_karyawan, staycool) :
         os.mkdir('hasil/'+namafolder)
+        
         for i in range(jumlah_karyawan):
             hs = open('hasil/'+namafolder+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
             hs.writelines('                                     PT. STAY COOL                                        \n')
