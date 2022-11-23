@@ -1,10 +1,10 @@
 try : 
-    from Main import Main
+    from core.Main import Main
 except ModuleNotFoundError:
     import os
     print('installing requirements.txt')
     os.system('pip install -r requirements.txt || pip3 install -r requirements.txt') #install module yang diperlukan
-    from Main import Main
+    from core.Main import Main
     
 import os
 from time import sleep

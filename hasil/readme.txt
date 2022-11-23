@@ -1,1 +1,1 @@
-File tempat menyimpan hasil dari program
+Folder tempat menyimpan hasil dari program

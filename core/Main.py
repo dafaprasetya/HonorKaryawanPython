@@ -1,5 +1,5 @@
 import pandas #import module pandas
-from Hasil import Hasil #import file Hasil.py
+from core.Hasil import Hasil #import file Hasil.py
 
 #class main
 class Main:
