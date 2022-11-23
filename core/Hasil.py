@@ -11,10 +11,14 @@ class Hasil:
             os.mkdir(desktop+namafolder)
         except FileExistsError:
             a = [1,2,3,4,5,6,7,8,9,0]
-            os.mkdir(desktop+namafolder+str(random.choice(a)))
+            r = str(random.choice(a))
+            os.mkdir(desktop+namafolder+r)
 
         for i in range(jumlah_karyawan):
-            hs = open(desktop+namafolder+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
+            try : 
+                hs = open(desktop+namafolder+r+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
+            except:
+                hs = open(desktop+namafolder+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
             hs.writelines('                                     PT. STAY COOL                                        \n')
             hs.writelines('Gaji Karyawan\n')
             hs.writelines('-------------------------------------------------------------------------------------------------------------------\n')
