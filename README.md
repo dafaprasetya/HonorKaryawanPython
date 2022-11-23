@@ -1,7 +1,6 @@
 <div style="text-align: center;">
     <h1>Tugas Dasprog kelompok 9</h1>
 </div> <br>
-<br>
 <h2>Membuat program hitung honor karyawan PT.STAY COOL</h2>
 <h3>Anggota kelompok :</h3>
 <ul>
@@ -11,3 +10,4 @@
     <li>Chairil Fajri <sup>12220563</sup> </li>
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
+<h1>Jangan lupa followw!!!</h1>

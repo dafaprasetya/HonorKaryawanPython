@@ -34,6 +34,7 @@ def mulai():
 tostart = ('start', 'mulai', 'run', '-r', '-m', '-s')
 toanggota = ('anggota', 'credit', '-a', '-c')
 toclass = ('Main')
+tolangsung = ('karyawan', '-k')
 tohelp = ('h', 'help', '-h')
 
 if len(sys.argv) > 1:
@@ -58,6 +59,13 @@ if len(sys.argv) > 1:
         print('Chairil Fajri')
         print('Arie Sutiawan')
         print('\n')
+    elif sys.argv[1] in tolangsung:
+        try :
+            Main(int(sys.argv[2]))
+        except IndexError:
+            print('Masukan jumlah karyawan')
+        except ValueError :
+            print('Masukan value dalam bentuk angka!')
     elif sys.argv[1] in tohelp :
         print('--------------Program Hitung Honor Karyawan Kontrak--------------')
         print('--------------------------PT. Stay Cool--------------------------\n')
@@ -86,4 +94,7 @@ else :
     for a in range(len(toanggota)):
         print(toanggota[a], end =', ')
     print(' | Melihat anggota kelompok')
+    for l in range(len(tolangsung)):
+        print(tolangsung[l], end =', ')
+    print('[jumlah karyawan] | Menjalankan program')
 

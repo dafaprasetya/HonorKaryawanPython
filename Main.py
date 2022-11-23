@@ -58,25 +58,9 @@ class Main:
         self.total_gaji_yang_dikeluarkan.append(gaji)
     #end total gaji keluar
 
-    #function __init__
-    def __init__(self):
-        
-        self.gaji_tetap = 2500000
-        self.list_gaji = []
-        self.list_nama = []
-        self.list_golongan = []
-        self.list_pendidikan = []
-        self.jumlah_jam_kerja = []
-        self.list_tunjangan = []
-        self.list_honor_lembur = []
-        self.list_pajak = []
-        self.total_gaji_yang_dikeluarkan = []
-        self.jumlah_karyawan = int(input('Masukan Jumlah Karyawan : '))
-        print('\n')
-        if self.jumlah_karyawan == '':
-            print('Masukan Value dalam bentuk angka!')
-        
-        for i in range(self.jumlah_karyawan):
+
+    def mulaii(self, argv):
+        for i in range(argv):
             try :
                 print('karyawan ke - {}'.format(i+1))
                 #input nama karyawan
@@ -143,5 +127,31 @@ class Main:
             print('Terima kasih sudah menggunakan program kami!')
         else :
             print('Terima kasih sudah menggunakan program kami!')
-            exit()     
+            exit()
+
+    #function __init__
+    def __init__(self,argv=None):
+        
+        self.gaji_tetap = 2500000
+        self.list_gaji = []
+        self.list_nama = []
+        self.list_golongan = []
+        self.list_pendidikan = []
+        self.jumlah_jam_kerja = []
+        self.list_tunjangan = []
+        self.list_honor_lembur = []
+        self.list_pajak = []
+        self.total_gaji_yang_dikeluarkan = []
+        self.jumlah_karyawan = 0
+        print('\n')
+        
+        if argv is None :
+            self.jumlah_karyawan = int(input('Masukan Jumlah Karyawan : '))
+            if self.jumlah_karyawan == '':
+                print('Masukan Value dalam bentuk angka!')
+            self.mulaii(self.jumlah_karyawan)
+        else:
+            print('Jumlah Karyawan : {}'.format(argv))
+            self.mulaii(argv)
+
     #end __init__
