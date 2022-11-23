@@ -122,8 +122,8 @@ class Main:
 
         if saveornot == 'Y' or saveornot == 'y' :
             namafolder = input('Nama Folder : ')
-            Hasil(namafolder,self.jumlah_karyawan, staycool)   
-            print('Data disimpan di folder hasil/{}'.format(namafolder))
+            Hasil(namafolder,argv, staycool)   
+            print('Data disimpan di folder Hasil/{}'.format(namafolder))
             print('Terima kasih sudah menggunakan program kami!')
         else :
             print('Terima kasih sudah menggunakan program kami!')

@@ -1,14 +1,20 @@
 import os
-import pandas
+import random
 
 class Hasil:
 
-
     def __init__(self, namafolder, jumlah_karyawan, staycool) :
-        os.mkdir('hasil/'+namafolder)
-        
+        # os.path.expanduser('~/Documents')
+        # os.mkdir('hasil/'+namafolder)
+        desktop = os.path.join(os.path.expanduser('~/Documents/'))+'Hkk_output/'
+        try:
+            os.mkdir(desktop+namafolder)
+        except FileExistsError:
+            a = [1,2,3,4,5,6,7,8,9,0]
+            os.mkdir(desktop+namafolder+str(random.choice(a)))
+
         for i in range(jumlah_karyawan):
-            hs = open('hasil/'+namafolder+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
+            hs = open(desktop+namafolder+'/'+staycool['nama_karyawan'][i] + '.txt', 'w')
             hs.writelines('                                     PT. STAY COOL                                        \n')
             hs.writelines('Gaji Karyawan\n')
             hs.writelines('-------------------------------------------------------------------------------------------------------------------\n')

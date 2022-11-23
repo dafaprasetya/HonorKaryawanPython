@@ -10,6 +10,13 @@ import os
 from time import sleep
 import sys
 
+desktop = os.path.join(os.path.expanduser('~/Documents/'))+'Hkk_output/'
+
+try :
+    os.mkdir(desktop)
+except FileExistsError:
+    pass
+
 def help():
     print("Usage :")
     print("python start.py [command]\n")
@@ -77,7 +84,7 @@ if len(sys.argv) > 1:
         try :
             Main(int(sys.argv[2]))
         except IndexError:
-            print('Masukan jumlah karyawan')
+            print('Tidak komplit')
         except ValueError :
             print('Masukan value dalam bentuk angka!')
     elif sys.argv[1] in tohelp :
