@@ -14,9 +14,7 @@ How to start
 
 
 ````
-```
-Look! You can see my backticks.
-```
+pip install ptstaycool
 ````
 
 <h1>Jangan lupa followw!!!</h1>
