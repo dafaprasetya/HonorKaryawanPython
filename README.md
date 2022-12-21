@@ -10,4 +10,11 @@
     <li>Chairil Fajri <sup>12220563</sup> </li>
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 <h1>Jangan lupa followw!!!</h1>
