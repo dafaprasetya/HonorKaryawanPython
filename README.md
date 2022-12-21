@@ -35,6 +35,10 @@ cd HonorKaryawanPython
 ````
 
 ````
+pip -r 
+````
+
+````
 python start.py
 ````
 
