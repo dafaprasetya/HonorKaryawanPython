@@ -11,7 +11,7 @@
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
 How to start
-```bash
+```python
 python start.py 
 ```
 
