@@ -12,10 +12,10 @@
 </ul>
 
 
-<h1>Cara menjalankan</h1>
+<h2>Cara menjalankan</h2>
 <hr>
 ````
 pip install ptstaycool
 ````
 
-<h1>Jangan lupa followw!!!</h1>
+<h2>Jangan lupa followw!!!</h2>
