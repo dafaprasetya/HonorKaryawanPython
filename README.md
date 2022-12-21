@@ -10,9 +10,10 @@
     <li>Chairil Fajri <sup>12220563</sup> </li>
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
-How to start
 
 
+<h1>Cara menjalankan</h1>
+<hr>
 ````
 pip install ptstaycool
 ````
