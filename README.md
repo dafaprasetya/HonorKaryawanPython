@@ -14,10 +14,28 @@
 
 <h2>Cara menjalankan</h2>
 
-
+<h3>pake pip</h3>
 
 ````
 pip install ptstaycool
+````
+
+````
+python -m ptstaycool
+````
+
+<h3>pake github</h3>
+
+````
+git clone https://github.com/dafaprasetya/HonorKaryawanPython
+````
+
+````
+cd HonorKaryawanPython
+````
+
+````
+python start.py
 ````
 
 <h2>Jangan lupa followw!!!</h2>
