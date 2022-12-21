@@ -11,8 +11,10 @@
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
 How to start
-```python
-python start.py 
+````
 ```
+Look! You can see my backticks.
+```
+````
 
 <h1>Jangan lupa followw!!!</h1>
