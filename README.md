@@ -53,5 +53,9 @@ python start.py
 | 'anggota', 'credits', '-a', '-c' | Melihat anggota kelompok |
 | 'h', 'help', '-h' | Help |
 
+
+<h2>Info penting lainnya</h2>
+<h4>Hasil dari program ini disimpan di folder Documents</h4>
+
 <br>
 Program dibuat untuk tugas mata kuliah dasar pemrograman UBSI
