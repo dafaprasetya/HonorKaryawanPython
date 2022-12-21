@@ -53,5 +53,5 @@ python start.py
 | 'anggota', 'credits', '-a', '-c' | Melihat anggota kelompok |
 | 'h', 'help', '-h' | Help |
 
-
-<h2>Jangan lupa followw!!!</h2>
+<br>
+<h2>Thanks!!</h2>
