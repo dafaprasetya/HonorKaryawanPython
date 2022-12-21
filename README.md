@@ -54,4 +54,4 @@ python start.py
 | 'h', 'help', '-h' | Help |
 
 <br>
-<h2>Thanks!!</h2>
+Program dibuat untuk tugas mata kuliah dasar pemrograman UBSI
