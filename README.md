@@ -6,8 +6,8 @@
 <ul>
     <li>Muhamad Dafa Prasetya <sup>12220563</sup></li>
     <li>Devi Alvandi <sup>12220453</sup> </li>
-    <li>Dimas Ajie <sup>12220563</sup> </li>
-    <li>Chairil Fajri <sup>12220563</sup> </li>
+    <li>Dimas Ajie <sup>12220402</sup> </li>
+    <li>Chairil Fajri <sup>12220400</sup> </li>
     <li>Arie Sutiawan <sup>12221429</sup> </li>
 </ul>
 
